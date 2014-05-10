@@ -16,6 +16,13 @@
   <script src="../vendor/mocha.js"></script>
   <script src="../vendor/chai.js"></script>
 
+  <!-- disable prototypes to prove plugin works with prototype
+  extensions turned off -->
+  <script>
+    window.ENV = {};
+    ENV.EXTEND_PROTOTYPES = false;
+  </script>
+
   <script src="../vendor/jquery-2.1.1.js"></script>
   <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
   <script src="http://builds.emberjs.com/release/ember.js"></script>

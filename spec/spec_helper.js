@@ -59,3 +59,7 @@ function lookup(searchString) {
 
 App.setupForTesting();
 App.injectTestHelpers();
+
+beforeEach(function() {
+  App.reset();
+});
